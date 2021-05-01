@@ -1,0 +1,14 @@
+- ssh-keygen -t rsa -C "your_email@example.com" - generate key
+- clip < id_rsa.pub - copy paste key or on a mac pbcopy < id_rsa.pub
+- `git log` - to see commits
+- `git push -u origin master` - the -u tells git to remember the params so that next time we can just use
+- `git git fetch` - Get upstream changes
+- `git diff HEAD` - see changes you just pulled in
+- `git diff --staged` - gets staged diffs
+- `git reset` - takes files off the staged status
+- `git checkout --(space)<target>` - changes file back to how it was at the last command
+- `git rm [file name]` - remove files
+- `git branch -vv` or `git status -sb` - get remote branch local branch is tracking
+- `git remote add [remoteName] [url]` - add a remote and a url
+- `git remote -v` - see remotes
+- `git diff --stat origin/master` - to see the files that you have committed but not pushed

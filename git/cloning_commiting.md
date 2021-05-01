@@ -1,0 +1,6 @@
+- `git clone [url]`
+- `git add .` - adds everything in the directory
+- `git commit -m [message]`
+- `git commit -am [message]` - adds everything in directory and commits with message
+- `git commit --amend` - pulls up editor and allows you to edit a commit message also commits staged files
+- `git add .` --> `git reset -- [file to be unstaged]` - adds all files and then you can remove a file from staging

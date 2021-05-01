@@ -1,0 +1,4 @@
+- `git rebase -i HEAD~[number of commits you want to sqash]` - Sqash commits
+- `git rebase master my_branch` - rebase master onto my_branch
+  - fix merge conflicts as needed and add them
+  - `git rebase --continue` to keep going

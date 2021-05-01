@@ -1,0 +1,9 @@
+- `git branch -av` - to view all the remote branches
+- `git branch [branch name]` - create a branch
+- `git branch -d [branch name]` - to delete a branch
+- `git push origin` --delete [branchName] - to delete a branch in remote
+- `git branch -r` - shows all branches
+- `git ls-remote` - get all branches in remote
+- `git checkout -b <branch name>` - create a new local branch and check it out
+- `git push -u <remote name> <branch name>` - push the branch upstream
+- `git reset --soft HEAD^` - move to commit ONE before the HEAD
