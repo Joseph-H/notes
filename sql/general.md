@@ -5,11 +5,22 @@ Nearly all of them use SQL for data definition and manipulation
 ### Terms:
 - Primary Key - is an optional special database column or columns used to identify a database record. Needs to be unique
 - Surrogate Key - is a type of Primary Key which uses a unique generated value. Should not have business value and should never change. Considered a best practice in database design
-- Foreign key constraints - you have a parent table and a child table. Child table can’t delete a row if that foreign key exists in the parent table.
+- Foreign key constraints - you have a parent table and a child table. FK in child table maps to a PK in parent table.
 - One to one - record in table A matches exactly one record in table B
 - One to many - record in table A matches many in Table B, but table B only matches only one record in table A
 - Many to Many - record in table A matches many in Table B and vice versa
 - Transactions - These are happening automatically in the database. ACID happens in a transaction. In a transaction you can begin it, then do things, you can rollback or save a certain point, and then finally you can commit to finish the transaction.
+
+### Normalization
+- First Normal Form - Fields must be atomic, ie. first name, last name in their own columns. Can't have repeating values like item1, item2
+- Second Normal Form - All non key columns must depend on the primary key. Meaning each table stores data about one subject like a customer
+- Third Normal Form - All non key columns must be mutually independent. This means we don't store calculations. Instead, we use lookup tables.
+
+### Denormalization
+Used to increase performance. For example - summarizing invoice data in an accounting table
+- downside is that you need to keep summary data current
+- you need to document why you denormalize
+- ensure that the denormalization increases performance
 
 ```
 SELECT
